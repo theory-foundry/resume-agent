@@ -1,0 +1,87 @@
+.markdown {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-weight: bold;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  h2 {
+    font-size: 1.125rem; /* 18px */
+    line-height: 1.75rem; /* 28px */
+  }
+
+  a {
+    color: rgb(139, 92, 246);
+    text-decoration: underline;
+  }
+
+  p {
+    code {
+      border-radius: 2px;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+  }
+  pre {
+    padding: 20px 30px;
+    border-radius: 8px;
+    overflow-x: auto;
+    code {
+      background-color: transparent;
+      outline: none;
+    }
+  }
+
+  ul {
+    padding-left: 30px;
+    margin-top: -30px;
+    line-height: normal;
+    li {
+      line-height: normal;
+      list-style-type: circle;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: contain;
+  }
+}
+.dark {
+  .markdown {
+    p {
+      code {
+        background-color: rgba(0, 0, 0, 0.2);
+        outline: 4px solid rgba(0, 0, 0, 0.2);
+      }
+    }
+    pre {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+
+.light {
+  .markdown {
+    p {
+      code {
+        background-color: rgb(51, 65, 85, 0.9);
+        outline: 4px solid rgb(51, 65, 85, 0.9);
+        color: rgb(226 232 240);
+      }
+    }
+    pre {
+      color: rgb(226 232 240);
+      background-color: rgb(51, 65, 85, 0.9);
+    }
+  }
+}
