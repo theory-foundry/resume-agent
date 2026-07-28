@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title">
+  <title id="title">Replaceable article placeholder</title>
+  <rect width="1200" height="675" fill="#f8fafc"/>
+  <rect x="190" y="90" width="820" height="495" rx="24" fill="#fff" stroke="#cbd5e1" stroke-width="6"/>
+  <rect x="270" y="180" width="520" height="34" rx="17" fill="#7c3aed"/>
+  <rect x="270" y="260" width="660" height="22" rx="11" fill="#94a3b8"/>
+  <rect x="270" y="315" width="590" height="22" rx="11" fill="#cbd5e1"/>
+  <rect x="270" y="370" width="630" height="22" rx="11" fill="#cbd5e1"/>
+</svg>

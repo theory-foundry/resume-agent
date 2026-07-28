@@ -1,0 +1,39 @@
+{
+  "name": "@resume-agent/widget",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "./dist/resume-agent.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/resume-agent.js"
+    },
+    "./react": {
+      "types": "./dist/react.d.ts",
+      "import": "./dist/react.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json && esbuild src/index.ts --bundle --format=esm --platform=browser --target=es2022 --outfile=dist/resume-agent.js",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "npm run build && node --test src/*.test.mjs"
+  },
+  "dependencies": {
+    "@resume-agent/contracts": "0.1.0"
+  },
+  "peerDependencies": {
+    "react": ">=18"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "happy-dom": "20.11.1"
+  }
+}

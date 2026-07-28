@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resume Agent widget example</title>
+    <style>
+      body {
+        background: #f3f5f9;
+        margin: 0;
+        padding: 48px 20px;
+      }
+      resume-agent-chat {
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <resume-agent-chat
+      gateway-url="http://localhost:8788"
+      title="Ask about this candidate"
+      placeholder="What would you like to know?"
+      suggestions='["What are their strongest skills?","Summarize their recent experience."]'
+      credentials="omit"
+      theme='{"accent":"#5b36d6","radius":"18px"}'
+    ></resume-agent-chat>
+
+    <!-- Run `npm run build -w @resume-agent/widget`, then serve the repository root. -->
+    <script type="module" src="../../packages/widget/dist/resume-agent.js"></script>
+  </body>
+</html>

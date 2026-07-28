@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title">
+  <title id="title">Replaceable project placeholder</title>
+  <rect width="1200" height="675" fill="#0f172a"/>
+  <rect x="120" y="105" width="960" height="465" rx="28" fill="#1e293b"/>
+  <path d="M250 440l180-170 140 125 140-105 240 210H250z" fill="#7c3aed"/>
+  <circle cx="820" cy="235" r="55" fill="#38bdf8"/>
+</svg>

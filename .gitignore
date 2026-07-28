@@ -43,11 +43,18 @@ logs/
 *.log
 
 # Package managers
-packages/
 .nuget/
+
+# Build output
+dist/
+.next/
+*.tsbuildinfo
 
 # Temporary files
 *.tmp
 *.temp
 *.bak
 *.cache
+
+# Local OMX workflow state
+.omx/

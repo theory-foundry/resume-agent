@@ -1,0 +1,30 @@
+{
+  "name": "@resume-agent/gateway",
+  "version": "0.1.0",
+  "type": "module",
+  "engines": {
+    "node": ">=22.9.0"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "node --env-file-if-exists=../../.env --import tsx src/cli.ts",
+    "start": "node --env-file-if-exists=../../.env dist/cli.js",
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "tsx --test src/*.test.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.30.0",
+    "@resume-agent/contracts": "0.1.0"
+  }
+}
