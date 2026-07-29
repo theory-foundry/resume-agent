@@ -26,6 +26,7 @@ The current MCP implementation pins the production v1 SDK line. SDK use is isola
 
 ```bash
 npm install
+npm run build:packages
 cp .env.example .env
 npm run dev:runtime
 ```
